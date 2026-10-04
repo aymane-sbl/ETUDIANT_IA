@@ -44,13 +44,13 @@ header .logo-nav.hidden{
 
 
 /* logo */
-header .logo-nav .logo {
+header .logo-nav a .logo {
     @media(max-width: 1000px) {
         display: none;
     }
 }
 header .logo-nav .logo img{
-    object-fit: cover;
+    object-fit:  cover;
 }
 
 /* nav */

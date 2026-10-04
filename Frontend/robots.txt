@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Emplacement du sitemap
+Sitemap: https://etudiant-ia.pages.dev/sitemap.xml

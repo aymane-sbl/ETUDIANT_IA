@@ -1,0 +1,153 @@
+:root {
+  /* =========================
+     COLORS
+     ========================= */
+
+  --color-primary: #087f73;
+  --color-primary-hover: #066b61;
+  --color-primary-light: #e5f4f1;
+
+  --color-accent: #5b4bd8;
+  --color-accent-light: #eeeaff;
+
+  --color-accent-2: #e94b4b;
+  --color-pdf-light: #ffeded;
+
+  --color-bg: #f8fafb;
+  --color-white: #ffffff;
+
+  --color-text: #101c25;
+  --color-text-secondary: #52616a;
+  --color-text-muted: #7b878e;
+
+  --color-border: #e3e8eb;
+
+
+  /* =========================
+     TYPOGRAPHY
+     ========================= */
+
+  --font-family:"Roboto", sans-serif;
+
+  --font-xs: 0.75rem;      /* 12px */
+  --font-sm: 0.875rem;     /* 14px */
+  --font-base: 1rem;       /* 16px */
+  --font-lg: 1.125rem;     /* 18px */
+  --font-xl: 1.25rem;      /* 20px */
+  --font-2xl: 1.5rem;      /* 24px */
+  --font-3xl: 2rem;        /* 32px */
+  --font-4xl: 2.75rem;     /* 44px */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+
+  /* =========================
+     SPACING
+     ========================= */
+
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+
+  /* =========================
+     LAYOUT
+     ========================= */
+
+  --container-width: 1400px;
+  --container-padding: 2.5rem;
+
+  --header-height: 76px;
+
+  --grid-columns: 4;
+  --grid-gap: var(--space-5);
+
+
+  /* =========================
+     RADIUS
+     ========================= */
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+
+  /* =========================
+     BORDER & SHADOW
+     ========================= */
+
+  --border: 1px solid var(--color-border);
+  --border-active: 2px solid var(--color-accent);
+
+
+  --shadow-sm:
+    0 2px 8px rgba(16, 28, 37, 0.05);
+
+  --shadow-md:
+    0 6px 20px rgba(16, 28, 37, 0.07);
+
+
+  /* =========================
+     COMPONENTS
+     ========================= */
+
+  /* Cards */
+
+  --card-padding: var(--space-5);
+  --card-radius: var(--radius-lg);
+  --card-shadow: var(--shadow-sm);
+
+
+  /* Buttons */
+
+  --button-height: 40px;
+  --button-radius: var(--radius-md);
+  --button-padding: 0 var(--space-5);
+
+
+  /* Inputs */
+
+  --input-height: 30px;
+  --input-width: 250px;
+  --input-radius: var(--radius-md);
+  --input-padding: 0 var(--space-4);
+
+  --input-height-2: 40px;
+  --input-width-2: 100%;
+  --input-radius-2: var(--radius-md);
+  --input-padding-2: var(--space-4);
+
+  --select-width :200px;
+
+
+  /* PDF */
+
+  --pdf-icon-size: 42px;
+  --pdf-color: var(--color-pdf);
+  --pdf-bg: var(--color-pdf-light);
+
+
+  /* =========================
+     TRANSITIONS
+     ========================= */
+
+  --transition:
+    180ms ease;
+
+   --footer-height: 60px;
+}

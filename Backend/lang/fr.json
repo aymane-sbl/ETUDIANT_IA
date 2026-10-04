@@ -1,0 +1,77 @@
+{
+  "common": {
+    "success": "Operation reussie.",
+    "error": "Une erreur interne est survenue.",
+    "not_found": "Ressource introuvable.",
+    "unauthorized": "Acces refuse. Veuillez vous identifier.",
+    "forbidden": "Vous n avez pas les permissions necessaires pour effectuer cette action.",
+    "bad_request": "Requete invalide."
+  },
+  "database": {
+    "connection_error": "Erreur de connexion a la base de donnees.",
+    "query_failed": "L execution de la requete a echoue.",
+    "record_exists": "Cet enregistrement existe deja dans la base de donnees.",
+    "column_not_allowed" : "colonne non autorisee"
+  },
+"auth": {
+    "login_success": "Connexion reussie.",
+    "logout_success": "Deconnexion reussie.",
+    "registration_success": "Inscription reussie avec succes.",
+    "invalid_credentials": "Email ou mot de passe incorrect.",
+    "token_missing": "Jeton d'authentification manquant, veuillez vous reconnecter.",
+    "token_expired": "Votre session a expire, veuillez vous reconnecter.",
+    "token_invalid": "Jeton d authentification invalide.",
+    "email_exist": "Cet email est deja utilise par un autre compte.",
+    "email_not_found": "Aucun compte n est associe a cette adresse email.",
+    "user_not_found": "Utilisateur introuvable.",
+    "wrong_password": "Mot de passe incorrect.",
+    "account_not_verified": "Votre compte n est pas encore verifie. Veuillez verifier votre email.",
+    "password_reset_sent": "Un lien de reinitialisation a ete envoye a votre adresse email.",
+    "password_reset_success": "Votre mot de passe a ete reinitialise avec succes.",
+    "password_reset_invalid": "Le lien de reinitialisation est invalide ou a expire.",
+    "too_many_attempts": "Trop de tentatives de connexion. Veuillez reessayer plus tard."
+  },
+  "material": {
+    "created": "Le document a ete ajoute avec succes.",
+    "updated": "Le document a ete mis a jour avec succes.",
+    "deleted": "Le document a ete supprime avec succes.",
+    "fetched_all": "Les documents ont ete recuperes avec succes.",
+    "fetched_single": "Le document a ete recupere avec succes.",
+    "not_found": "Aucun document trouve pour cette matiere ou ce semestre."
+  },
+  "search": {
+    "no_results": "Aucun resultat trouve pour votre recherche.",
+    "results_found": "Resultats de la recherche recuperes avec succes.",
+    "invalid_query": "Les parametres de recherche sont invalides."
+  },
+  "admin": {
+    "user_created": "Le nouvel utilisateur a ete cree avec succes.",
+    "user_updated": "Les informations de l utilisateur ont ete mises a jour.",
+    "user_deleted": "L utilisateur a ete supprime de maniere permanente.",
+    "user_banned": "Le compte de l utilisateur a ete suspendu.",
+    "user_unbanned": "Le compte de l utilisateur a ete reactive.",
+    "dashboard_accessed": "Acces au tableau de bord administrateur autorise."
+  },
+  "users": {
+    "profile_fetched": "Profil recupere avec succes.",
+    "profile_updated": "Votre profil a ete mis a jour.",
+    "password_changed": "Votre mot de passe a ete modifie avec succes.",
+    "account_deleted": "Votre compte a ete supprime."
+  },
+  "validation": {
+    "required_field": "Ce champ est obligatoire.",
+    "invalid_email": "Le format de l adresse email est invalide.",
+    "password_too_short": "Le mot de passe doit contenir au moins 8 caracteres.",
+    "file_too_large": "Le fichier depasse la taille maximale autorisee.",
+    "invalid_file_type": "Format de fichier non supporte. Veuillez telecharger un fichier PDF."
+  },
+  "upload": {
+    "error": "Erreur lors du telechargement du fichier.",
+    "missing_file": "Aucun fichier n a ete fourni.",
+    "file_too_large": "Le fichier depasse la taille maximale autorisee.",
+    "invalid_format": "Format de fichier non valide. Seuls les fichiers PDF sont acceptes.",
+    "server_error": "Erreur lors de l enregistrement du fichier sur le serveur.",
+    "corrupted_file": "Le fichier telecharge semble etre corrompu ou illisible.",
+    "upload_interrupted": "Le telechargement du fichier a ete interrompu. Veuillez reessayer."
+  }
+}

@@ -1,0 +1,67 @@
+# =========================
+# Python / FastAPI (Backend)
+# =========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variables (Secrets)
+.env
+.env.*
+!.env.example
+
+# Databases
+*.sqlite3
+*.db
+
+# Testing / Profiling
+.pytest_cache/
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+
+# =========================
+# HTML / CSS / JS (Frontend)
+# =========================
+
+# Node modules (in case you use npm/yarn for frontend packages)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build files (if using bundlers like Webpack/Vite later)
+dist/
+build/
+.next/
+.nuxt/
+
+# =========================
+# OS / System Files
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =========================
+# IDEs and Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo

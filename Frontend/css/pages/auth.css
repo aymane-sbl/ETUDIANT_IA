@@ -1,0 +1,120 @@
+
+
+.container .information{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-5);
+    border-radius: var(--radius-md);
+    border: 2px solid var( --color-accent-2);
+    display: none;
+}
+.container main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+main .auth{
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+}
+
+main .auth h1{
+    font-size: var(--font-2xl);
+    font-weight: var(--weight-bold);
+    color: var(--color-text);
+}
+
+main .auth form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+main .auth form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    position: relative;
+}
+
+main .auth form .form-group label{
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+}
+
+main .auth form .form-group .input-icon{
+    position: relative;
+}
+
+main .auth form .form-group .input-icon input{
+    position: relative;
+    height: var(--input-height-2);
+    width: var(--input-width-2);
+    border: var(--border);
+    border-radius: var(--input-radius-2);
+    padding: var(--input-padding-2);
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+}
+
+main .auth form .form-group input:focus{
+    border: var(--border-active);
+}
+
+main .auth form .form-group .input-icon button{
+    position: absolute;
+    right: var(--space-4);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+main .auth form .form-group .invalid{
+    color: var(--color-accent-2);
+    display: none;
+}
+
+
+main .auth form .forgot_password a{
+    
+    font-size: var(--font-size-sm);
+    color: var(--color-accent);
+    font-weight: var(--weight-semibold);
+}
+main .auth form #login-btn{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: var(--weight-semibold);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+}
+
+main .auth form #login-btn:hover{
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+main .auth form .create-account{
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    font-weight: var(--weight-semibold);
+    cursor: pointer;
+}
+
+main .auth form .create-account a{
+    color: var(--color-accent);
+}

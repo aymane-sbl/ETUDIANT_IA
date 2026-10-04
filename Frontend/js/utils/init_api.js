@@ -2,7 +2,7 @@ export async function initApi(endpoint, params = {"Method": "GET","cache": 'no-s
     let loader = document.getElementById("loader");
     loader.style.display = "block";
     try {
-      const subdomaine = "https://api--etudiant-ia--4rb7wvfyhphp.code.run/";
+      const subdomaine = "https://api--etudiant-ia--4rb7wvfyhphp.code.run";
       // const subdomaine = "http://127.0.0.1:8000";
 
       let response = await fetch(`${subdomaine}${endpoint}`, params);

@@ -40,7 +40,7 @@ export function createCardAdmin(element) {
                             <p>type : ${element.type}</p>
                             <p>année : ${element.year_academic}</p>
                             <p>semestre : ${element.semester}</p>
-                            <p>session : ${element.session}</p>
+                            <p>session : ${element.session === "none" ? "Cours" : element.session}</p>
                         </div>
 
                         <div class="utils">

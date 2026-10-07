@@ -38,8 +38,9 @@ async def add_material( payload : dict = Depends(decode_token),
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,detail=f"INTERNAL_SERVER_ERROR")
 
 @router.delete("/")
-async def delete_materials(material_services : Manage_MaterialService  = Depends(get_material_service_obj),id : int  = Query(...,ge=1),) :
+async def delete_materials(material_services : Manage_MaterialService  = Depends(get_material_service_obj),id : int  = Query(...,ge=1),payload : dict = Depends(decode_token),) :
     try :
+        check_is_admin(role=payload["role"])
         result =await  material_services.delete_materials(id=id)
         return result
     except MaterialError as e :

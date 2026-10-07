@@ -676,27 +676,19 @@ The uploaded document is sent to the configured S3-compatible storage and its UR
 DELETE /api/v1/admin/materials/?id=10
 ```
 
-The endpoint deletes the corresponding database material record.
+Authentication:
 
-#### ⚠️ Current Security Note
+```http
+Authorization: Bearer <JWT_TOKEN>
+```
 
-Despite being an admin endpoint, the current Backend implementation does **not** apply `decode_token` or `check_is_admin` to the DELETE route.
-
-Therefore this route should be protected before production usage.
-
-The intended behavior should be:
+The authenticated account must have:
 
 ```text
-Request
-   ↓
-JWT verification
-   ↓
-Extract role
-   ↓
-role == admin ?
-   ├── YES → Delete
-   └── NO  → 401 / 403
+role = admin
 ```
+
+The endpoint deletes the corresponding database material record.
 
 ---
 
@@ -985,7 +977,7 @@ The application currently implements:
 
 - Argon2 password hashing
 - JWT authentication
-- Role-based admin verification for material uploads
+- Role-based admin verification for material management operations
 - Authentication rate limiting
 - Global IP rate limiting
 - Environment-based secrets
@@ -1004,13 +996,7 @@ The public platform currently does not require student accounts.
 
 Registration code is preserved only so administration can temporarily create accounts when necessary.
 
-### 2. DELETE material authorization
-
-`DELETE /api/v1/admin/materials/` currently needs JWT + admin-role protection.
-
-This should have high priority.
-
-### 3. Registration route naming
+### 2. Registration route naming
 
 The disabled route currently uses:
 
@@ -1020,7 +1006,7 @@ A future implementation should preferably use:
 
 `/register`
 
-### 4. Register schema
+### 3. Register schema
 
 `RegisterSchemas` currently contains:
 
@@ -1040,7 +1026,7 @@ password
 
 If account management is redesigned as an Admin feature, it would be better to introduce a dedicated Admin user-creation endpoint and schema.
 
-### 5. Admin page protection
+### 4. Admin page protection
 
 Frontend redirection or checking `localStorage` should never be considered sufficient authorization.
 
@@ -1048,7 +1034,7 @@ Security-sensitive operations must always be validated by the Backend.
 
 The material upload endpoint already follows this rule.
 
-### 6. Cache invalidation after deletion
+### 5. Cache invalidation after deletion
 
 Adding a material clears material caches.
 
@@ -1056,19 +1042,19 @@ Deleting a material currently does not clear those caches.
 
 This could temporarily return cached deleted resources until the cache expires.
 
-### 7. Subjects management
+### 6. Subjects management
 
 The current Admin Subjects API provides `GET subjects`, but no active API for creating, updating, or deleting subjects.
 
 Subjects therefore need to already exist in the database or be managed separately.
 
-### 8. Database SSL
+### 7. Database SSL
 
 The MySQL connection currently creates an SSL context with hostname and certificate verification disabled.
 
 This may be acceptable for some development/provider configurations, but production certificate verification should preferably be enabled when supported.
 
-### 9. API URL configuration
+### 8. API URL configuration
 
 The production API domain is currently hard-coded in:
 
